@@ -82,7 +82,7 @@ export function InvitesPage() {
                 </div>
                 <button
                     onClick={() => setIsCreateModalOpen(true)}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors w-fit"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors w-fit"
                 >
                     <Plus className="w-3.5 h-3.5" />
                     <span>{t('invites_page.create_invite_button')}</span>
@@ -228,7 +228,7 @@ export function InvitesPage() {
                                     maxUses: parseInt(e.target.value),
                                 })
                             }
-                            className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                            className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                         />
                     </div>
                     <div>
@@ -246,7 +246,7 @@ export function InvitesPage() {
                                     expiresInDays: parseInt(e.target.value),
                                 })
                             }
-                            className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                            className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                         />
                     </div>
                 </div>

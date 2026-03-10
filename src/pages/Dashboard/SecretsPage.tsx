@@ -85,7 +85,7 @@ export function SecretsPage() {
                     </div>
                     <Link
                         to="/"
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors w-fit"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors w-fit"
                     >
                         <Plus className="w-3.5 h-3.5" />
                         <span>{t('secrets_page.create_secret_button')}</span>
@@ -96,7 +96,7 @@ export function SecretsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
                 <div className="bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600 p-3">
                     <div className="flex items-center gap-3">
-                        <div className="w-9 h-9 flex items-center justify-center bg-teal-500/10 text-teal-500">
+                        <div className="w-9 h-9 flex items-center justify-center bg-red-500/10 text-red-500">
                             <Shield className="w-4 h-4" />
                         </div>
                         <div>
@@ -120,7 +120,7 @@ export function SecretsPage() {
                     >
                         <div className="flex items-start justify-between mb-2">
                             <div className="flex items-center gap-2">
-                                <div className="w-7 h-7 flex items-center justify-center bg-teal-500/10 text-teal-500">
+                                <div className="w-7 h-7 flex items-center justify-center bg-red-500/10 text-red-500">
                                     <Shield className="w-3.5 h-3.5" />
                                 </div>
                                 <span
@@ -211,7 +211,7 @@ export function SecretsPage() {
                                 >
                                     <td className="px-4 py-2.5">
                                         <div className="flex items-center gap-2.5">
-                                            <div className="w-8 h-8 flex-shrink-0 flex items-center justify-center bg-teal-500/10 text-teal-500">
+                                            <div className="w-8 h-8 flex-shrink-0 flex items-center justify-center bg-red-500/10 text-red-500">
                                                 <Shield className="w-4 h-4" />
                                             </div>
                                             <div className="min-w-0">

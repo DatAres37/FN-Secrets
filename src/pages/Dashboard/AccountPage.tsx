@@ -61,7 +61,7 @@ export function AccountPage() {
                                     }
                                     className={`flex items-center gap-1.5 py-2.5 px-0.5 border-b-2 font-medium text-xs whitespace-nowrap transition-colors ${
                                         activeTab === tab.id
-                                            ? 'border-teal-500 text-teal-500 dark:text-teal-400'
+                                            ? 'border-red-500 text-red-500 dark:text-red-400'
                                             : 'border-transparent text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-300'
                                     }`}
                                 >

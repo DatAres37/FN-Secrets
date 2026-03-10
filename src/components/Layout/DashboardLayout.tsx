@@ -112,7 +112,7 @@ export function DashboardLayout() {
                                             onClick={() => setIsMobileMenuOpen(false)}
                                             className={`flex items-center space-x-3 px-3 py-2 transition-all duration-200 ${
                                                 isActive(item.href)
-                                                    ? 'bg-teal-500/20 text-teal-400 border border-teal-500/30'
+                                                    ? 'bg-red-500/20 text-red-400 border border-red-500/30'
                                                     : 'text-gray-600 dark:text-slate-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-dark-600'
                                             }`}
                                         >
@@ -141,7 +141,7 @@ export function DashboardLayout() {
                             <div className="flex items-center px-4 py-4 border-b border-gray-200 dark:border-dark-600">
                                 <Link
                                     to="/"
-                                    className="flex items-center gap-2 text-gray-900 dark:text-white hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+                                    className="flex items-center gap-2 text-gray-900 dark:text-white hover:text-red-500 dark:hover:text-red-400 transition-colors"
                                 >
                                     <Logo className="w-5 h-5 fill-gray-900 dark:fill-white" />
                                     <span className="text-lg font-bold">Hemmelig</span>
@@ -158,7 +158,7 @@ export function DashboardLayout() {
                                             to={item.href}
                                             className={`flex items-center gap-2.5 px-2.5 py-2 text-sm transition-colors ${
                                                 isActive(item.href)
-                                                    ? 'bg-teal-500/10 text-teal-600 dark:text-teal-400 border-l-2 border-teal-500 -ml-[2px] pl-[12px]'
+                                                    ? 'bg-red-500/10 text-red-600 dark:text-red-400 border-l-2 border-red-500 -ml-[2px] pl-[12px]'
                                                     : 'text-gray-600 dark:text-slate-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-dark-700/50'
                                             }`}
                                         >
@@ -175,7 +175,7 @@ export function DashboardLayout() {
                                     to="/dashboard/account"
                                     className="flex items-center gap-2.5 px-2.5 py-2 bg-gray-50 dark:bg-dark-700/30 border border-gray-100 dark:border-dark-600/50 hover:bg-gray-100 dark:hover:bg-dark-700/50 transition-colors overflow-hidden"
                                 >
-                                    <div className="w-8 h-8 bg-teal-500 flex items-center justify-center shrink-0">
+                                    <div className="w-8 h-8 bg-red-500 flex items-center justify-center shrink-0">
                                         <User className="w-3.5 h-3.5 text-white" />
                                     </div>
                                     <div className="min-w-0">

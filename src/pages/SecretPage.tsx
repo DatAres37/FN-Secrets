@@ -175,7 +175,7 @@ export function SecretPage() {
         return (
             <main className="py-8">
                 <div className="flex flex-col items-center justify-center py-16">
-                    <Loader2 className="h-10 w-10 animate-spin text-teal-500 mb-4" />
+                    <Loader2 className="h-10 w-10 animate-spin text-red-500 mb-4" />
                     <p className="text-gray-500 dark:text-slate-400">
                         {t('secret_page.loading_message')}
                     </p>
@@ -237,7 +237,7 @@ export function SecretPage() {
                                         value={decryptionKeyInput}
                                         onChange={(e) => setDecryptionKeyInput(e.target.value)}
                                         onKeyDown={(e) => e.key === 'Enter' && handleViewSecret()}
-                                        className="w-full px-4 py-3 bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-500 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 transition-all duration-200 text-center font-mono text-sm"
+                                        className="w-full px-4 py-3 bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-500 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-red-500 transition-all duration-200 text-center font-mono text-sm"
                                         placeholder={t('secret_page.decryption_key_placeholder')}
                                         autoFocus
                                     />
@@ -251,7 +251,7 @@ export function SecretPage() {
                                         value={passwordInput}
                                         onChange={(e) => setPasswordInput(e.target.value)}
                                         onKeyDown={(e) => e.key === 'Enter' && handleViewSecret()}
-                                        className="w-full px-4 py-3 bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-500 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 transition-all duration-200 text-center"
+                                        className="w-full px-4 py-3 bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-500 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-red-500 transition-all duration-200 text-center"
                                         placeholder={t('secret_page.password_placeholder')}
                                         autoFocus={!needsManualKeyEntry}
                                     />
@@ -261,7 +261,7 @@ export function SecretPage() {
                             <button
                                 onClick={handleViewSecret}
                                 disabled={needsManualKeyEntry && !decryptionKeyInput}
-                                className="inline-flex items-center gap-2 px-8 py-3 bg-teal-500 hover:bg-teal-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold transition-all duration-200"
+                                className="inline-flex items-center gap-2 px-8 py-3 bg-red-500 hover:bg-red-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold transition-all duration-200"
                             >
                                 <LockOpen className="w-5 h-5" />
                                 {t('secret_page.unlock_secret')}
@@ -292,7 +292,7 @@ export function SecretPage() {
                 {/* Header */}
                 <div className="flex items-center justify-between p-4 sm:p-5 border-b border-gray-200 dark:border-dark-600">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 flex items-center justify-center bg-teal-500/10 dark:bg-teal-500/20 text-teal-600 dark:text-teal-400">
+                        <div className="w-10 h-10 flex items-center justify-center bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400">
                             <ShieldCheck className="w-5 h-5" />
                         </div>
                         <span className="font-semibold text-gray-900 dark:text-white">
@@ -308,7 +308,7 @@ export function SecretPage() {
                         )}
                         <button
                             onClick={handleCopyToClipboard}
-                            className="p-2.5 text-gray-500 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400 hover:bg-gray-100 dark:hover:bg-dark-700 transition-all duration-200"
+                            className="p-2.5 text-gray-500 dark:text-slate-400 hover:text-red-500 dark:hover:text-red-400 hover:bg-gray-100 dark:hover:bg-dark-700 transition-all duration-200"
                             title={t('secret_page.copy_secret')}
                         >
                             {copied ? (
@@ -334,7 +334,7 @@ export function SecretPage() {
                                 {files.map((file) => (
                                     <div
                                         key={file.id}
-                                        className="flex items-center justify-between p-3 bg-gray-50 dark:bg-dark-700/30 border border-gray-100 dark:border-dark-600/50 hover:border-teal-500/50 transition-all duration-200"
+                                        className="flex items-center justify-between p-3 bg-gray-50 dark:bg-dark-700/30 border border-gray-100 dark:border-dark-600/50 hover:border-red-500/50 transition-all duration-200"
                                     >
                                         <div className="flex items-center gap-3">
                                             <div className="w-8 h-8 flex items-center justify-center bg-gray-200 dark:bg-dark-600 text-gray-500 dark:text-slate-400">
@@ -346,7 +346,7 @@ export function SecretPage() {
                                         </div>
                                         <button
                                             onClick={() => handleDownload(file)}
-                                            className="flex items-center gap-2 px-3 py-1.5 text-sm text-teal-600 dark:text-teal-400 hover:bg-teal-500/10 transition-all duration-200"
+                                            className="flex items-center gap-2 px-3 py-1.5 text-sm text-red-600 dark:text-red-400 hover:bg-red-500/10 transition-all duration-200"
                                         >
                                             <Download className="w-4 h-4" />
                                             {t('secret_page.download')}
@@ -362,7 +362,7 @@ export function SecretPage() {
                 <div className="p-4 sm:p-5 border-t border-gray-200 dark:border-dark-600 bg-gray-50 dark:bg-dark-700/30 flex flex-col sm:flex-row items-center justify-between gap-3">
                     <Link
                         to="/"
-                        className="w-full sm:w-auto inline-flex items-center gap-2 justify-center px-5 py-2.5 bg-teal-500 hover:bg-teal-600 text-white text-sm font-medium transition-all duration-200"
+                        className="w-full sm:w-auto inline-flex items-center gap-2 justify-center px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white text-sm font-medium transition-all duration-200"
                     >
                         <Plus className="w-4 h-4" />
                         {t('secret_page.create_your_own')}

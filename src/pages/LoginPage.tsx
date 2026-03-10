@@ -106,7 +106,7 @@ export function LoginPage() {
                         {t('login_page.no_account_question')}{' '}
                         <Link
                             to="/register"
-                            className="text-teal-500 hover:text-teal-400 font-medium transition-colors duration-200"
+                            className="text-red-500 hover:text-red-400 font-medium transition-colors duration-200"
                         >
                             {t('login_page.sign_up_link')}
                         </Link>

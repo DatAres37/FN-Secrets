@@ -33,8 +33,8 @@ export function ImportantAlert() {
     return (
         <div className="bg-gray-50 dark:bg-dark-700/50 border border-gray-200 dark:border-dark-600 p-4 mb-4">
             <div className="flex items-start gap-3">
-                <Info className="w-5 h-5 text-teal-500 dark:text-teal-400 flex-shrink-0 mt-0.5" />
-                <div className="flex-1 text-sm text-gray-700 dark:text-slate-300 prose prose-sm dark:prose-invert prose-p:my-0 prose-ul:my-1 prose-ol:my-1 prose-li:my-0 prose-a:text-teal-600 dark:prose-a:text-teal-400 max-w-none">
+                <Info className="w-5 h-5 text-red-500 dark:text-red-400 flex-shrink-0 mt-0.5" />
+                <div className="flex-1 text-sm text-gray-700 dark:text-slate-300 prose prose-sm dark:prose-invert prose-p:my-0 prose-ul:my-1 prose-ol:my-1 prose-li:my-0 prose-a:text-red-600 dark:prose-a:text-red-400 max-w-none">
                     <Markdown>{settings.importantMessage}</Markdown>
                 </div>
                 <button

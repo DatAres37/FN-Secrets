@@ -341,7 +341,7 @@ export function RegisterPage() {
                         {t('register_page.already_have_account_question')}{' '}
                         <Link
                             to="/login"
-                            className="text-teal-500 hover:text-teal-400 font-medium transition-colors duration-200"
+                            className="text-red-500 hover:text-red-400 font-medium transition-colors duration-200"
                         >
                             {t('register_page.sign_in_link')}
                         </Link>

@@ -20,7 +20,7 @@ export function TitleField({ value, onChange }: TitleFieldProps) {
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
                     placeholder={t('title_field.placeholder')}
-                    className="w-full pl-10 pr-4 py-2 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50 transition-all duration-300"
+                    className="w-full pl-10 pr-4 py-2 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all duration-300"
                 />
             </div>
             <p className="text-xs text-gray-500 dark:text-slate-400 ml-1">

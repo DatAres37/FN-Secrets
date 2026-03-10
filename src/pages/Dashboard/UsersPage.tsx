@@ -136,7 +136,7 @@ export function UsersPage() {
                 </div>
                 <button
                     onClick={() => setIsAddUserModalOpen(true)}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors w-fit"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors w-fit"
                 >
                     <UserPlus className="w-3.5 h-3.5" />
                     <span>{t('users_page.add_user_button')}</span>
@@ -151,7 +151,7 @@ export function UsersPage() {
                         placeholder={t('users_page.search_placeholder')}
                         value={searchInput}
                         onChange={(e) => handleSearchChange(e.target.value)}
-                        className="w-full max-w-xs pl-9 pr-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors"
+                        className="w-full max-w-xs pl-9 pr-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors"
                     />
                 </div>
             </div>

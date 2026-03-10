@@ -243,7 +243,7 @@ export function SecurityTab({ initialTwoFactorEnabled }: SecurityTabProps) {
                                 <p className="text-xs text-red-500">{passwordErrors.form}</p>
                             )}
                             {successMessage && (
-                                <p className="text-xs text-teal-500">{successMessage}</p>
+                                <p className="text-xs text-red-500">{successMessage}</p>
                             )}
 
                             <button
@@ -298,7 +298,7 @@ export function SecurityTab({ initialTwoFactorEnabled }: SecurityTabProps) {
                                 {!twoFactorEnabled ? (
                                     <button
                                         onClick={() => setShow2FASetup(true)}
-                                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors"
+                                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors"
                                     >
                                         <Smartphone className="w-3.5 h-3.5" />
                                         <span>{t('account_page.two_factor.setup_button')}</span>
@@ -364,7 +364,7 @@ export function SecurityTab({ initialTwoFactorEnabled }: SecurityTabProps) {
                             type="password"
                             value={disable2FAPassword}
                             onChange={(e) => setDisable2FAPassword(e.target.value)}
-                            className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors"
+                            className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors"
                             placeholder={t(
                                 'account_page.security_settings.current_password_placeholder'
                             )}
@@ -434,7 +434,7 @@ function PasswordInput({
                     type={show ? 'text' : 'password'}
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
-                    className={`w-full pl-9 pr-9 py-2 text-sm bg-gray-50 dark:bg-dark-700 border text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 transition-colors ${error ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200 dark:border-dark-600 focus:ring-teal-500 focus:border-teal-500'}`}
+                    className={`w-full pl-9 pr-9 py-2 text-sm bg-gray-50 dark:bg-dark-700 border text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 transition-colors ${error ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : 'border-gray-200 dark:border-dark-600 focus:ring-red-500 focus:border-red-500'}`}
                     placeholder={placeholder}
                 />
                 <button
@@ -499,7 +499,7 @@ function TwoFASetup({
                                 type="password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
-                                className="w-full pl-9 pr-3 py-2 text-sm bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors"
+                                className="w-full pl-9 pr-3 py-2 text-sm bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors"
                                 placeholder={t(
                                     'account_page.security_settings.current_password_placeholder'
                                 )}
@@ -511,7 +511,7 @@ function TwoFASetup({
                         <button
                             onClick={onEnable}
                             disabled={isLoading || !password}
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {isLoading
                                 ? t('common.loading')
@@ -543,7 +543,7 @@ function TwoFASetup({
                     </div>
                     <button
                         onClick={onContinue}
-                        className="w-full px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors"
+                        className="w-full px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors"
                     >
                         {t('account_page.two_factor.continue')}
                     </button>
@@ -565,7 +565,7 @@ function TwoFASetup({
                             onChange={(e) =>
                                 setVerifyCode(e.target.value.replace(/\D/g, '').slice(0, 6))
                             }
-                            className="w-full px-3 py-2 text-sm bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors text-center text-lg tracking-widest"
+                            className="w-full px-3 py-2 text-sm bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors text-center text-lg tracking-widest"
                             placeholder="000000"
                             maxLength={6}
                         />
@@ -575,7 +575,7 @@ function TwoFASetup({
                         <button
                             onClick={onVerify}
                             disabled={isLoading || verifyCode.length !== 6}
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {isLoading
                                 ? t('common.loading')

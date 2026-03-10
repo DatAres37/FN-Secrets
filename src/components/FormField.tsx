@@ -52,7 +52,7 @@ export function FormField({
                     minLength={minLength}
                     maxLength={maxLength}
                     name={name}
-                    className={`w-full pl-10 ${hasRightElement ? 'pr-10' : 'pr-4'} py-3 bg-gray-50 dark:bg-dark-700/50 border ${error ? 'border-red-500' : 'border-gray-200 dark:border-dark-500/50'} text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 transition-all duration-200 ${className}`}
+                    className={`w-full pl-10 ${hasRightElement ? 'pr-10' : 'pr-4'} py-3 bg-gray-50 dark:bg-dark-700/50 border ${error ? 'border-red-500' : 'border-gray-200 dark:border-dark-500/50'} text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-red-500 transition-all duration-200 ${className}`}
                 />
                 {rightElement && (
                     <div className="absolute right-3 top-1/2 transform -translate-y-1/2">

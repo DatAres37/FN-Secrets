@@ -32,7 +32,7 @@ export function AuthPageLayout({
             <div className="w-full max-w-md">
                 <Link
                     to={backTo}
-                    className="inline-flex items-center space-x-2 text-gray-500 dark:text-slate-400 hover:text-teal-400 transition-colors duration-300 mb-8 group"
+                    className="inline-flex items-center space-x-2 text-gray-500 dark:text-slate-400 hover:text-red-400 transition-colors duration-300 mb-8 group"
                 >
                     <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300" />
                     <span>{backLabel}</span>

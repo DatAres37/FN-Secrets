@@ -92,7 +92,7 @@ export function EditUserModal({ isOpen, onClose, onSave, user }: EditUserModalPr
                             type="checkbox"
                             checked={banned}
                             onChange={(e) => setBanned(e.target.checked)}
-                            className="h-3.5 w-3.5 border-gray-300 text-teal-600 focus:ring-teal-500"
+                            className="h-3.5 w-3.5 border-gray-300 text-red-600 focus:ring-red-500"
                         />
                         <span className="text-xs text-gray-600 dark:text-slate-300 flex items-center gap-1.5">
                             <Ban className="w-3.5 h-3.5" />

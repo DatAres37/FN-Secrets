@@ -31,9 +31,9 @@ export function LoadingButton({
                 ${
                     isDisabled
                         ? 'bg-gray-200 dark:bg-dark-600 text-gray-400 dark:text-slate-500 cursor-not-allowed'
-                        : 'bg-teal-500 hover:bg-teal-600 text-white'
+                        : 'bg-red-500 hover:bg-red-600 text-white'
                 }
-                focus:outline-none focus:ring-4 focus:ring-teal-500/30
+                focus:outline-none focus:ring-4 focus:ring-red-500/30
                 ${className}
             `}
         >

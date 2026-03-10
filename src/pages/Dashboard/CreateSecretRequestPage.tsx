@@ -101,8 +101,8 @@ export function CreateSecretRequestPage() {
                 <div className="max-w-xl mx-auto">
                     <div className="bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600 p-4">
                         <div className="flex items-center gap-2.5 mb-4">
-                            <div className="w-9 h-9 bg-teal-500/10 flex items-center justify-center">
-                                <Link2 className="w-4 h-4 text-teal-500" />
+                            <div className="w-9 h-9 bg-red-500/10 flex items-center justify-center">
+                                <Link2 className="w-4 h-4 text-red-500" />
                             </div>
                             <div>
                                 <h2 className="text-sm font-bold text-gray-900 dark:text-white">
@@ -129,7 +129,7 @@ export function CreateSecretRequestPage() {
                                         onClick={() =>
                                             handleCopyToClipboard(createdRequest.creatorLink)
                                         }
-                                        className="p-2 bg-teal-500 hover:bg-teal-600 text-white transition-colors"
+                                        className="p-2 bg-red-500 hover:bg-red-600 text-white transition-colors"
                                     >
                                         <Copy className="w-3.5 h-3.5" />
                                     </button>
@@ -151,7 +151,7 @@ export function CreateSecretRequestPage() {
                                             onClick={() =>
                                                 handleCopyToClipboard(createdRequest.webhookSecret!)
                                             }
-                                            className="p-2 bg-teal-500 hover:bg-teal-600 text-white transition-colors"
+                                            className="p-2 bg-red-500 hover:bg-red-600 text-white transition-colors"
                                         >
                                             <Copy className="w-3.5 h-3.5" />
                                         </button>
@@ -177,7 +177,7 @@ export function CreateSecretRequestPage() {
                                         setAllowedIp('');
                                         setWebhookUrl('');
                                     }}
-                                    className="flex-1 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors"
+                                    className="flex-1 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors"
                                 >
                                     {t('create_request_page.success.create_another_button')}
                                 </button>
@@ -229,7 +229,7 @@ export function CreateSecretRequestPage() {
                                 placeholder={t('create_request_page.form.title_placeholder')}
                                 required
                                 maxLength={200}
-                                className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                                className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                             />
                         </div>
 
@@ -244,7 +244,7 @@ export function CreateSecretRequestPage() {
                                 placeholder={t('create_request_page.form.description_placeholder')}
                                 rows={2}
                                 maxLength={1000}
-                                className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 resize-none"
+                                className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 resize-none"
                             />
                         </div>
 
@@ -256,7 +256,7 @@ export function CreateSecretRequestPage() {
                             <select
                                 value={validFor}
                                 onChange={(e) => setValidFor(Number(e.target.value))}
-                                className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                                className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                             >
                                 {REQUEST_VALIDITY_OPTIONS.map((option) => (
                                     <option key={option.value} value={option.value}>
@@ -286,7 +286,7 @@ export function CreateSecretRequestPage() {
                                     <select
                                         value={expiresIn}
                                         onChange={(e) => setExpiresIn(Number(e.target.value))}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                                     >
                                         {SECRET_EXPIRATION_OPTIONS.map((option) => (
                                             <option key={option.value} value={option.value}>
@@ -307,7 +307,7 @@ export function CreateSecretRequestPage() {
                                         max={9999}
                                         value={maxViews}
                                         onChange={(e) => setMaxViews(parseInt(e.target.value) || 1)}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                                     />
                                 </div>
 
@@ -323,7 +323,7 @@ export function CreateSecretRequestPage() {
                                         placeholder={t(
                                             'create_request_page.form.ip_restriction_placeholder'
                                         )}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                                     />
                                 </div>
 
@@ -334,7 +334,7 @@ export function CreateSecretRequestPage() {
                                         id="preventBurn"
                                         checked={preventBurn}
                                         onChange={(e) => setPreventBurn(e.target.checked)}
-                                        className="w-3.5 h-3.5 text-teal-500 border-gray-300 dark:border-dark-600 focus:ring-teal-500"
+                                        className="w-3.5 h-3.5 text-red-500 border-gray-300 dark:border-dark-600 focus:ring-red-500"
                                     />
                                     <label
                                         htmlFor="preventBurn"
@@ -366,7 +366,7 @@ export function CreateSecretRequestPage() {
                                     placeholder={t(
                                         'create_request_page.form.webhook_url_placeholder'
                                     )}
-                                    className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                                    className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                                 />
                                 <p className="text-xs text-gray-500 dark:text-slate-400 mt-0.5">
                                     {t('create_request_page.form.webhook_url_hint')}
@@ -379,7 +379,7 @@ export function CreateSecretRequestPage() {
                             <button
                                 type="submit"
                                 disabled={isLoading || !title.trim()}
-                                className="w-full px-3 py-2 bg-teal-500 hover:bg-teal-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white text-xs font-medium transition-colors"
+                                className="w-full px-3 py-2 bg-red-500 hover:bg-red-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white text-xs font-medium transition-colors"
                             >
                                 {isLoading
                                     ? t('create_request_page.form.creating_button')

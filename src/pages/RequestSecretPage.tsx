@@ -152,7 +152,7 @@ export function RequestSecretPage() {
                         <p className="text-gray-500 dark:text-slate-400 mb-6">{error}</p>
                         <Link
                             to="/"
-                            className="inline-block px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white transition-colors"
+                            className="inline-block px-4 py-2 bg-red-500 hover:bg-red-600 text-white transition-colors"
                         >
                             {t('request_secret_page.error.go_home_button')}
                         </Link>
@@ -194,7 +194,7 @@ export function RequestSecretPage() {
                                         onClick={() =>
                                             handleCopyToClipboard(createdSecret.decryptionKey)
                                         }
-                                        className="p-3 bg-teal-500 hover:bg-teal-600 text-white transition-colors"
+                                        className="p-3 bg-red-500 hover:bg-red-600 text-white transition-colors"
                                     >
                                         <Copy className="w-4 h-4" />
                                     </button>
@@ -266,7 +266,7 @@ export function RequestSecretPage() {
                         <button
                             onClick={handleSubmit}
                             disabled={isSubmitting || !secret.trim()}
-                            className="w-full px-4 py-3 bg-teal-500 hover:bg-teal-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-medium transition-colors flex items-center justify-center space-x-2"
+                            className="w-full px-4 py-3 bg-red-500 hover:bg-red-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-medium transition-colors flex items-center justify-center space-x-2"
                         >
                             {isSubmitting ? (
                                 <span>{t('request_secret_page.form.submitting_button')}</span>

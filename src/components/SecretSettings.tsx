@@ -78,7 +78,7 @@ export const SecretSettings = () => {
                             type="text"
                             readOnly
                             value={secretUrl}
-                            className="w-full pl-4 pr-12 py-3 bg-gray-50 dark:bg-dark-700/50 border border-gray-200 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-teal-500/30 transition-all duration-200 text-sm"
+                            className="w-full pl-4 pr-12 py-3 bg-gray-50 dark:bg-dark-700/50 border border-gray-200 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-red-500/30 transition-all duration-200 text-sm"
                         />
                         <button
                             onClick={() => handleCopyToClipboard(secretUrl, 'url')}
@@ -87,7 +87,7 @@ export const SecretSettings = () => {
                             {copied === 'url' ? (
                                 <Check className="h-5 w-5 text-green-500" />
                             ) : (
-                                <Copy className="h-5 w-5 text-gray-400 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400" />
+                                <Copy className="h-5 w-5 text-gray-400 dark:text-slate-400 hover:text-red-500 dark:hover:text-red-400" />
                             )}
                         </button>
                     </div>
@@ -102,7 +102,7 @@ export const SecretSettings = () => {
                                 type={showPassword ? 'text' : 'password'}
                                 readOnly
                                 value={password}
-                                className="w-full pl-4 pr-24 py-3 bg-gray-50 dark:bg-dark-700/50 border border-gray-200 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-teal-500/30 transition-all duration-200 text-sm"
+                                className="w-full pl-4 pr-24 py-3 bg-gray-50 dark:bg-dark-700/50 border border-gray-200 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-red-500/30 transition-all duration-200 text-sm"
                             />
                             <div className="absolute inset-y-0 right-0 flex items-center pr-4 space-x-3">
                                 <button
@@ -123,7 +123,7 @@ export const SecretSettings = () => {
                                     {copied === 'password' ? (
                                         <Check className="h-5 w-5 text-green-500" />
                                     ) : (
-                                        <Copy className="h-5 w-5 text-gray-400 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400" />
+                                        <Copy className="h-5 w-5 text-gray-400 dark:text-slate-400 hover:text-red-500 dark:hover:text-red-400" />
                                     )}
                                 </button>
                             </div>
@@ -144,7 +144,7 @@ export const SecretSettings = () => {
                 <div className="w-full sm:w-auto flex gap-3">
                     <button
                         onClick={() => handleCopyToClipboard(secretUrl, 'url')}
-                        className="flex-1 sm:flex-none px-5 py-2.5 bg-teal-500 hover:bg-teal-400 text-white text-sm font-medium transition-all duration-200"
+                        className="flex-1 sm:flex-none px-5 py-2.5 bg-red-500 hover:bg-red-400 text-white text-sm font-medium transition-all duration-200"
                     >
                         {t('secret_settings.copy_url_button')}
                     </button>

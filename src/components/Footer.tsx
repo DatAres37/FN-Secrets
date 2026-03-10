@@ -25,7 +25,7 @@ export function Footer() {
                                 <rect x="7" width="2" height="16" fill="#00205B" />
                                 <rect y="7" width="22" height="2" fill="#00205B" />
                             </svg>
-                            <span className="text-gray-500 dark:text-slate-400 text-xs group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-colors">
+                            <span className="text-gray-500 dark:text-slate-400 text-xs group-hover:text-red-500 dark:group-hover:text-red-400 transition-colors">
                                 {t('footer.tagline')}
                             </span>
                         </Link>
@@ -64,14 +64,14 @@ export function Footer() {
                                 </svg>
                             </a>
                             <a
-                                href="https://x.com/iamdothash"
+                                href="https://federation.network"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-200 transition-colors"
-                                aria-label="X (Twitter)"
+                                aria-label="Federation Network"
                             >
-                                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                <svg className="w-4 h-4" viewBox="0 0 192 192" fill="currentColor">
+                                    <path d="M94.4 26.2c48.2 81.1 61.5 104 61 105.3s-5.8 1.5-41.3 1.5H73.5l-5.2 9c-2.9 4.8-5.3 9.3-5.3 9.9 0 .8 19.2 1.1 64" />
                                 </svg>
                             </a>
                             <a

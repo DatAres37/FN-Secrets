@@ -79,20 +79,20 @@ export function FileUpload({ onFileChange, compact = false }: FileUploadProps) {
     if (!user) {
         return (
             <div
-                className={`border-2 border-dashed border-gray-300 dark:border-dark-500/50 ${compact ? 'px-4 py-2.5' : 'p-4'} text-center bg-gray-50 dark:bg-dark-700/20 hover:border-teal-500/50 transition-all duration-300 group`}
+                className={`border-2 border-dashed border-gray-300 dark:border-dark-500/50 ${compact ? 'px-4 py-2.5' : 'p-4'} text-center bg-gray-50 dark:bg-dark-700/20 hover:border-red-500/50 transition-all duration-300 group`}
             >
                 <div className="flex items-center justify-center space-x-3">
                     <div
-                        className={`${compact ? 'p-1.5' : 'p-2'} bg-gray-200 dark:bg-dark-600/50 group-hover:bg-teal-500/20 transition-all duration-300`}
+                        className={`${compact ? 'p-1.5' : 'p-2'} bg-gray-200 dark:bg-dark-600/50 group-hover:bg-red-500/20 transition-all duration-300`}
                     >
-                        <Lock className="w-4 h-4 text-gray-500 dark:text-slate-400 group-hover:text-teal-400 transition-colors duration-300" />
+                        <Lock className="w-4 h-4 text-gray-500 dark:text-slate-400 group-hover:text-red-400 transition-colors duration-300" />
                     </div>
                     <span className="text-gray-500 dark:text-slate-400 text-sm group-hover:text-gray-600 dark:text-slate-300 transition-colors duration-300">
                         {t('file_upload.sign_in_to_upload')}
                     </span>
                     <Link
                         to="/login"
-                        className="inline-block px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-gray-900 dark:text-white text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                        className="inline-block px-3 py-1.5 bg-red-500 hover:bg-red-600 text-gray-900 dark:text-white text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg"
                     >
                         {t('file_upload.sign_in')}
                     </Link>
@@ -105,14 +105,14 @@ export function FileUpload({ onFileChange, compact = false }: FileUploadProps) {
         <div>
             <div
                 {...getRootProps()}
-                className={`border-2 border-dashed ${compact ? 'px-4 py-2.5' : 'p-4'} text-center transition-all duration-300 group ${isDragActive ? 'border-teal-500/80 bg-dark-700/40' : 'border-gray-300 dark:border-dark-500/50 bg-gray-50 dark:bg-dark-700/20 hover:border-teal-500/50'}`}
+                className={`border-2 border-dashed ${compact ? 'px-4 py-2.5' : 'p-4'} text-center transition-all duration-300 group ${isDragActive ? 'border-red-500/80 bg-dark-700/40' : 'border-gray-300 dark:border-dark-500/50 bg-gray-50 dark:bg-dark-700/20 hover:border-red-500/50'}`}
             >
                 <input {...getInputProps()} />
                 <div
                     className={`flex ${compact ? 'flex-row space-x-3' : 'flex-col space-y-2'} items-center justify-center`}
                 >
                     <UploadCloud
-                        className={`${compact ? 'w-5 h-5' : 'w-8 h-8'} text-gray-500 dark:text-slate-400 group-hover:text-teal-400 transition-colors duration-300`}
+                        className={`${compact ? 'w-5 h-5' : 'w-8 h-8'} text-gray-500 dark:text-slate-400 group-hover:text-red-400 transition-colors duration-300`}
                     />
                     {isDragActive ? (
                         <p className="text-gray-600 dark:text-slate-300 text-sm">

@@ -170,7 +170,7 @@ export function AnalyticsPage() {
                         <select
                             value={timeRange}
                             onChange={handleTimeRangeChange}
-                            className="text-xs bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 px-2 py-1.5 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                            className="text-xs bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 px-2 py-1.5 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500"
                         >
                             {timeRangeOptions.map((option) => (
                                 <option key={option.value} value={option.value}>
@@ -186,8 +186,8 @@ export function AnalyticsPage() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
                 <div className="bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600 p-3">
                     <div className="flex items-center gap-2.5">
-                        <div className="p-1.5 bg-teal-500/10">
-                            <Shield className="w-4 h-4 text-teal-500" />
+                        <div className="p-1.5 bg-red-500/10">
+                            <Shield className="w-4 h-4 text-red-500" />
                         </div>
                         <div>
                             <p className="text-lg font-bold text-gray-900 dark:text-white">
@@ -342,7 +342,7 @@ export function AnalyticsPage() {
                                         width={80}
                                         height={32}
                                         color="#14b8a6"
-                                        className="text-teal-500"
+                                        className="text-red-500"
                                     />
                                 </div>
                             </div>
@@ -436,7 +436,7 @@ export function AnalyticsPage() {
                                                         }
                                                     )}
                                                 </td>
-                                                <td className="py-1.5 px-2 text-right font-medium text-teal-600 dark:text-teal-400">
+                                                <td className="py-1.5 px-2 text-right font-medium text-red-600 dark:text-red-400">
                                                     {day.secrets.toLocaleString()}
                                                 </td>
                                                 <td className="py-1.5 px-2 text-right font-medium text-blue-600 dark:text-blue-400">

@@ -122,7 +122,7 @@ export function SecretRequestsPage() {
                 </div>
                 <button
                     onClick={() => navigate('/dashboard/secret-requests/create')}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors w-fit"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors w-fit"
                 >
                     <Plus className="w-3.5 h-3.5" />
                     <span>{t('secret_requests_page.create_request_button')}</span>
@@ -221,7 +221,7 @@ export function SecretRequestsPage() {
                                                                 href={`/secret/${request.secretId}`}
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
-                                                                className="p-1.5 text-teal-500 hover:bg-teal-50 dark:hover:bg-teal-500/10 transition-colors"
+                                                                className="p-1.5 text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
                                                                 title={t(
                                                                     'secret_requests_page.table.view_secret_tooltip'
                                                                 )}
@@ -234,7 +234,7 @@ export function SecretRequestsPage() {
                                                             onClick={() =>
                                                                 fetchCreatorLink(request)
                                                             }
-                                                            className="p-1.5 text-teal-500 hover:bg-teal-50 dark:hover:bg-teal-500/10 transition-colors"
+                                                            className="p-1.5 text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors"
                                                             title={t(
                                                                 'secret_requests_page.table.copy_link_tooltip'
                                                             )}

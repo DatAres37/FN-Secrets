@@ -307,7 +307,7 @@ const PasswordDropdown: FC<PasswordDropdownProps> = ({ onInsert, buttonClass }) 
                                         setPasswordLength(newLength);
                                         setPassword(generatePassword(newLength, options));
                                     }}
-                                    className="w-full accent-teal-500"
+                                    className="w-full accent-red-500"
                                 />
                             </div>
 
@@ -317,7 +317,7 @@ const PasswordDropdown: FC<PasswordDropdownProps> = ({ onInsert, buttonClass }) 
                                         type="checkbox"
                                         checked={options.numbers}
                                         onChange={() => handleOptionChange('numbers')}
-                                        className="mr-1.5 accent-teal-500"
+                                        className="mr-1.5 accent-red-500"
                                     />
                                     {t('editor.password_modal.include_numbers')}
                                 </label>
@@ -326,7 +326,7 @@ const PasswordDropdown: FC<PasswordDropdownProps> = ({ onInsert, buttonClass }) 
                                         type="checkbox"
                                         checked={options.symbols}
                                         onChange={() => handleOptionChange('symbols')}
-                                        className="mr-1.5 accent-teal-500"
+                                        className="mr-1.5 accent-red-500"
                                     />
                                     {t('editor.password_modal.include_symbols')}
                                 </label>
@@ -335,7 +335,7 @@ const PasswordDropdown: FC<PasswordDropdownProps> = ({ onInsert, buttonClass }) 
                                         type="checkbox"
                                         checked={options.uppercase}
                                         onChange={() => handleOptionChange('uppercase')}
-                                        className="mr-1.5 accent-teal-500"
+                                        className="mr-1.5 accent-red-500"
                                     />
                                     {t('editor.password_modal.include_uppercase')}
                                 </label>
@@ -344,7 +344,7 @@ const PasswordDropdown: FC<PasswordDropdownProps> = ({ onInsert, buttonClass }) 
                                         type="checkbox"
                                         checked={options.lowercase}
                                         onChange={() => handleOptionChange('lowercase')}
-                                        className="mr-1.5 accent-teal-500"
+                                        className="mr-1.5 accent-red-500"
                                     />
                                     {t('editor.password_modal.include_lowercase')}
                                 </label>
@@ -370,7 +370,7 @@ const PasswordDropdown: FC<PasswordDropdownProps> = ({ onInsert, buttonClass }) 
                             <button
                                 type="button"
                                 onClick={handleInsert}
-                                className="w-full px-3 py-1.5 bg-teal-500 text-white text-xs font-medium hover:bg-teal-600 transition-colors"
+                                className="w-full px-3 py-1.5 bg-red-500 text-white text-xs font-medium hover:bg-red-600 transition-colors"
                             >
                                 {t('editor.password_modal.insert')}
                             </button>
@@ -460,12 +460,12 @@ const LinkDropdown: FC<LinkDropdownProps> = ({
                                     value={url}
                                     onChange={(e) => setUrl(e.target.value)}
                                     placeholder={t('editor.link_modal.url_placeholder')}
-                                    className="w-full px-2 py-1.5 text-xs bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-teal-500"
+                                    className="w-full px-2 py-1.5 text-xs bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-red-500"
                                 />
                             </div>
                             <button
                                 type="submit"
-                                className="w-full px-3 py-1.5 bg-teal-500 text-white text-xs font-medium hover:bg-teal-600 transition-colors"
+                                className="w-full px-3 py-1.5 bg-red-500 text-white text-xs font-medium hover:bg-red-600 transition-colors"
                             >
                                 {initialUrl
                                     ? t('editor.link_modal.update')
@@ -637,7 +637,7 @@ const MenuBar: FC = () => {
     const buttonClass =
         'p-1.5 bg-gray-200 dark:bg-dark-600/50 hover:bg-gray-300 dark:hover:bg-dark-500/50 text-gray-600 dark:text-slate-300 hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:scale-105 min-w-[32px] touch-manipulation';
     const activeButtonClass =
-        'p-1.5 bg-teal-500 text-white transition-all duration-200 min-w-[32px] touch-manipulation';
+        'p-1.5 bg-red-500 text-white transition-all duration-200 min-w-[32px] touch-manipulation';
 
     const groupClass = 'flex items-center gap-0.5';
 
@@ -991,7 +991,7 @@ export default function Editor({
                     }}
                     editorProps={{
                         attributes: {
-                            class: 'w-full min-h-[12rem] sm:min-h-[16rem] p-4 sm:p-6 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50 transition-all duration-300 text-sm sm:text-base prose prose-sm max-w-none prose-headings:mt-6 prose-headings:first:mt-0 prose-headings:text-gray-900 dark:prose-headings:text-slate-100 prose-h1:text-2xl prose-h1:font-bold prose-h1:mb-4 prose-h2:text-xl prose-h2:font-bold prose-h2:mb-3 prose-h3:text-lg prose-h3:font-semibold prose-h3:mb-3 prose-p:my-3 prose-p:leading-relaxed prose-p:text-gray-800 dark:prose-p:text-slate-200 prose-strong:text-gray-900 dark:prose-strong:text-slate-200 prose-strong:font-bold prose-em:text-gray-800 dark:prose-em:text-slate-200 prose-ul:pl-5 prose-ul:my-3 prose-ol:pl-5 prose-ol:my-3 prose-li:my-1 prose-li:leading-normal prose-li:text-gray-800 dark:prose-li:text-slate-200 prose-a:text-teal-600 dark:prose-a:text-teal-400 prose-a:underline prose-a:font-medium hover:prose-a:text-teal-500 dark:hover:prose-a:text-teal-300 prose-code:bg-gray-200 dark:prose-code:bg-dark-800 prose-code:text-gray-800 dark:prose-code:text-slate-200 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:font-mono prose-pre:bg-gray-200 dark:prose-pre:bg-dark-900 prose-pre:text-gray-900 dark:prose-pre:text-white prose-pre:p-4 prose-pre:my-4 prose-pre:overflow-auto prose-pre:code:bg-transparent prose-pre:code:p-0 prose-pre:code:text-sm prose-pre:code:font-mono prose-blockquote:border-l-4 prose-blockquote:border-gray-300 dark:prose-blockquote:border-dark-500 prose-blockquote:pl-4 prose-blockquote:py-1 prose-blockquote:my-4 prose-blockquote:italic prose-blockquote:text-gray-600 dark:prose-blockquote:text-slate-300 prose-hr:my-6 prose-hr:border-gray-300 dark:prose-hr:border-dark-600',
+                            class: 'w-full min-h-[12rem] sm:min-h-[16rem] p-4 sm:p-6 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all duration-300 text-sm sm:text-base prose prose-sm max-w-none prose-headings:mt-6 prose-headings:first:mt-0 prose-headings:text-gray-900 dark:prose-headings:text-slate-100 prose-h1:text-2xl prose-h1:font-bold prose-h1:mb-4 prose-h2:text-xl prose-h2:font-bold prose-h2:mb-3 prose-h3:text-lg prose-h3:font-semibold prose-h3:mb-3 prose-p:my-3 prose-p:leading-relaxed prose-p:text-gray-800 dark:prose-p:text-slate-200 prose-strong:text-gray-900 dark:prose-strong:text-slate-200 prose-strong:font-bold prose-em:text-gray-800 dark:prose-em:text-slate-200 prose-ul:pl-5 prose-ul:my-3 prose-ol:pl-5 prose-ol:my-3 prose-li:my-1 prose-li:leading-normal prose-li:text-gray-800 dark:prose-li:text-slate-200 prose-a:text-red-600 dark:prose-a:text-red-400 prose-a:underline prose-a:font-medium hover:prose-a:text-red-500 dark:hover:prose-a:text-red-300 prose-code:bg-gray-200 dark:prose-code:bg-dark-800 prose-code:text-gray-800 dark:prose-code:text-slate-200 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:font-mono prose-pre:bg-gray-200 dark:prose-pre:bg-dark-900 prose-pre:text-gray-900 dark:prose-pre:text-white prose-pre:p-4 prose-pre:my-4 prose-pre:overflow-auto prose-pre:code:bg-transparent prose-pre:code:p-0 prose-pre:code:text-sm prose-pre:code:font-mono prose-blockquote:border-l-4 prose-blockquote:border-gray-300 dark:prose-blockquote:border-dark-500 prose-blockquote:pl-4 prose-blockquote:py-1 prose-blockquote:my-4 prose-blockquote:italic prose-blockquote:text-gray-600 dark:prose-blockquote:text-slate-300 prose-hr:my-6 prose-hr:border-gray-300 dark:prose-hr:border-dark-600',
                         },
                     }}
                     {...props}

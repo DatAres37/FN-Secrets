@@ -38,8 +38,8 @@ export function ProfileTab() {
     return (
         <div className="bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600 p-4">
             <div className="flex items-center gap-2.5 mb-4">
-                <div className="p-1.5 bg-teal-500/10">
-                    <User className="w-4 h-4 text-teal-500" />
+                <div className="p-1.5 bg-red-500/10">
+                    <User className="w-4 h-4 text-red-500" />
                 </div>
                 <div>
                     <h2 className="text-sm font-semibold text-gray-900 dark:text-white">
@@ -61,7 +61,7 @@ export function ProfileTab() {
                         name="username"
                         value={profileData.username}
                         onChange={handleProfileChange}
-                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors"
+                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors"
                     />
                 </div>
 
@@ -76,7 +76,7 @@ export function ProfileTab() {
                             name="email"
                             value={profileData.email}
                             onChange={handleProfileChange}
-                            className="w-full pl-9 pr-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors"
+                            className="w-full pl-9 pr-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors"
                         />
                     </div>
                 </div>
@@ -91,7 +91,7 @@ export function ProfileTab() {
                     <button
                         onClick={handleProfileSave}
                         disabled={isLoading}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <Save className="w-3.5 h-3.5" />
                         <span>

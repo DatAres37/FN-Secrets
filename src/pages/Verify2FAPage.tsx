@@ -81,8 +81,8 @@ export function Verify2FAPage() {
         >
             <div className="bg-white dark:bg-dark-800/80 backdrop-blur-sm border border-gray-200 dark:border-dark-600 p-6 shadow-xl">
                 <div className="flex justify-center mb-6">
-                    <div className="p-3 bg-teal-500/20">
-                        <Shield className="w-8 h-8 text-teal-400" />
+                    <div className="p-3 bg-red-500/20">
+                        <Shield className="w-8 h-8 text-red-400" />
                     </div>
                 </div>
 
@@ -100,7 +100,7 @@ export function Verify2FAPage() {
                                 value={digit}
                                 onChange={(e) => handleChange(index, e.target.value)}
                                 onKeyDown={(e) => handleKeyDown(index, e)}
-                                className="w-12 h-14 text-center text-xl font-semibold bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50 transition-all duration-300"
+                                className="w-12 h-14 text-center text-xl font-semibold bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all duration-300"
                             />
                         ))}
                     </div>

@@ -32,7 +32,7 @@ export function ViewsSlider({ value, onChange }: ViewsSliderProps) {
                 max="999"
                 value={value}
                 onChange={handleInputChange}
-                className="w-16 px-2 py-1 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 text-center focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50 transition-all duration-300 text-sm"
+                className="w-16 px-2 py-1 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 text-center focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all duration-300 text-sm"
             />
         </div>
     );

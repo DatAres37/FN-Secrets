@@ -207,7 +207,7 @@ export function DeveloperTab() {
                         <a
                             href="/api/docs"
                             target="_blank"
-                            className="text-teal-500 hover:underline"
+                            className="text-red-500 hover:underline"
                         >
                             {t('account_page.developer.api_docs')}
                         </a>
@@ -238,7 +238,7 @@ export function DeveloperTab() {
                             value={newKeyName}
                             onChange={(e) => setNewKeyName(e.target.value)}
                             placeholder={t('account_page.developer.key_name_placeholder')}
-                            className="w-full px-3 py-2 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50 transition-all duration-300"
+                            className="w-full px-3 py-2 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all duration-300"
                         />
                     </div>
                     <div>
@@ -252,7 +252,7 @@ export function DeveloperTab() {
                                     e.target.value ? parseInt(e.target.value) : undefined
                                 )
                             }
-                            className="w-full px-3 py-2 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50 transition-all duration-300"
+                            className="w-full px-3 py-2 bg-gray-100 dark:bg-dark-700/50 border border-gray-300 dark:border-dark-500/50 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all duration-300"
                         >
                             <option value="">{t('account_page.developer.never_expires')}</option>
                             <option value="30">

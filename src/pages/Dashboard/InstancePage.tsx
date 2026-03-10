@@ -210,7 +210,7 @@ export function InstancePage() {
                                     }
                                     className={`flex items-center gap-1.5 py-2.5 px-0.5 border-b-2 font-medium text-xs whitespace-nowrap transition-colors ${
                                         activeTab === tab.id
-                                            ? 'border-teal-500 text-teal-500 dark:text-teal-400'
+                                            ? 'border-red-500 text-red-500 dark:text-red-400'
                                             : 'border-transparent text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-300'
                                     }`}
                                 >
@@ -254,7 +254,7 @@ export function InstancePage() {
                                             setGeneralSetting('instanceName', e.target.value)
                                         }
                                         disabled={isManaged}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                     />
                                 </div>
 
@@ -333,7 +333,7 @@ export function InstancePage() {
                                                 )
                                             }
                                             disabled={isManaged}
-                                            className="w-full appearance-none px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                                            className="w-full appearance-none px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
                                         >
                                             {EXPIRATION_OPTIONS.map((option) => (
                                                 <option
@@ -367,7 +367,7 @@ export function InstancePage() {
                                             )
                                         }
                                         disabled={isManaged}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                     />
                                 </div>
                             </div>
@@ -383,7 +383,7 @@ export function InstancePage() {
                                     }
                                     rows={2}
                                     disabled={isManaged}
-                                    className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                    className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                 />
                             </div>
 
@@ -401,7 +401,7 @@ export function InstancePage() {
                                         'instance_page.general_settings.important_message_placeholder'
                                     )}
                                     disabled={isManaged}
-                                    className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                    className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                 />
                                 <p className="text-xs text-gray-500 dark:text-slate-400 mt-0.5">
                                     {t('instance_page.general_settings.important_message_hint')}
@@ -412,7 +412,7 @@ export function InstancePage() {
                                 <button
                                     onClick={() => handleSaveSettings('general')}
                                     disabled={isLoading}
-                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     <Save className="w-3.5 h-3.5" />
                                     <span>
@@ -504,7 +504,7 @@ export function InstancePage() {
                                             )
                                         }
                                         disabled={isManaged}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                     />
                                 </div>
 
@@ -522,7 +522,7 @@ export function InstancePage() {
                                             )
                                         }
                                         disabled={isManaged}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                     />
                                 </div>
                             </div>
@@ -531,7 +531,7 @@ export function InstancePage() {
                                 <button
                                     onClick={() => handleSaveSettings('security')}
                                     disabled={isLoading}
-                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     <Save className="w-3.5 h-3.5" />
                                     <span>
@@ -592,7 +592,7 @@ export function InstancePage() {
                                             className="sr-only peer"
                                         />
                                         <div
-                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-teal-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-teal-500 ${isManaged ? 'opacity-60' : ''}`}
+                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500 ${isManaged ? 'opacity-60' : ''}`}
                                         ></div>
                                     </label>
                                 </div>
@@ -626,7 +626,7 @@ export function InstancePage() {
                                             className="sr-only peer"
                                         />
                                         <div
-                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-teal-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-teal-500 ${isManaged ? 'opacity-60' : ''}`}
+                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500 ${isManaged ? 'opacity-60' : ''}`}
                                         ></div>
                                     </label>
                                 </div>
@@ -662,7 +662,7 @@ export function InstancePage() {
                                             className="sr-only peer"
                                         />
                                         <div
-                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-teal-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-teal-500 ${isManaged ? 'opacity-60' : ''}`}
+                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500 ${isManaged ? 'opacity-60' : ''}`}
                                         ></div>
                                     </label>
                                 </div>
@@ -688,7 +688,7 @@ export function InstancePage() {
                                             'organization_page.registration_settings.allowed_domains_placeholder'
                                         )}
                                         disabled={isManaged}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                     />
                                     <p className="text-xs text-gray-500 dark:text-slate-400 mt-0.5">
                                         {t(
@@ -702,7 +702,7 @@ export function InstancePage() {
                                 <button
                                     onClick={() => handleSaveSettings('organization')}
                                     disabled={isLoading}
-                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     <Save className="w-3.5 h-3.5" />
                                     <span>
@@ -759,7 +759,7 @@ export function InstancePage() {
                                             className="sr-only peer"
                                         />
                                         <div
-                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-teal-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-teal-500 ${isManaged ? 'opacity-60' : ''}`}
+                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500 ${isManaged ? 'opacity-60' : ''}`}
                                         ></div>
                                     </label>
                                 </div>
@@ -776,7 +776,7 @@ export function InstancePage() {
                                         }
                                         placeholder={t('webhook_settings.webhook_url_placeholder')}
                                         disabled={isManaged}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                     />
                                     <p className="text-xs text-gray-500 dark:text-slate-400 mt-0.5">
                                         {t('webhook_settings.webhook_url_hint')}
@@ -797,7 +797,7 @@ export function InstancePage() {
                                             'webhook_settings.webhook_secret_placeholder'
                                         )}
                                         disabled={isManaged}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                     />
                                     <p className="text-xs text-gray-500 dark:text-slate-400 mt-0.5">
                                         {t('webhook_settings.webhook_secret_hint')}
@@ -835,7 +835,7 @@ export function InstancePage() {
                                                 className="sr-only peer"
                                             />
                                             <div
-                                                className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-teal-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-teal-500 ${isManaged ? 'opacity-60' : ''}`}
+                                                className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500 ${isManaged ? 'opacity-60' : ''}`}
                                             ></div>
                                         </label>
                                     </div>
@@ -865,7 +865,7 @@ export function InstancePage() {
                                                 className="sr-only peer"
                                             />
                                             <div
-                                                className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-teal-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-teal-500 ${isManaged ? 'opacity-60' : ''}`}
+                                                className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500 ${isManaged ? 'opacity-60' : ''}`}
                                             ></div>
                                         </label>
                                     </div>
@@ -876,7 +876,7 @@ export function InstancePage() {
                                 <button
                                     onClick={() => handleSaveSettings('webhook')}
                                     disabled={isLoading}
-                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     <Save className="w-3.5 h-3.5" />
                                     <span>
@@ -933,7 +933,7 @@ export function InstancePage() {
                                             className="sr-only peer"
                                         />
                                         <div
-                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-teal-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-teal-500 ${isManaged ? 'opacity-60' : ''}`}
+                                            className={`w-9 h-5 bg-gray-300 dark:bg-dark-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-500/50 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500 ${isManaged ? 'opacity-60' : ''}`}
                                         ></div>
                                     </label>
                                 </div>
@@ -952,7 +952,7 @@ export function InstancePage() {
                                             'metrics_settings.metrics_secret_placeholder'
                                         )}
                                         disabled={isManaged}
-                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-dark-700 border border-gray-200 dark:border-dark-600 text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                                     />
                                     <p className="text-xs text-gray-500 dark:text-slate-400 mt-0.5">
                                         {t('metrics_settings.metrics_secret_hint')}
@@ -981,7 +981,7 @@ export function InstancePage() {
                                 <button
                                     onClick={() => handleSaveSettings('metrics')}
                                     disabled={isLoading}
-                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white text-xs font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     <Save className="w-3.5 h-3.5" />
                                     <span>
@@ -1002,7 +1002,7 @@ export function InstancePage() {
                 title={t('common.error')}
                 confirmText={t('common.ok')}
                 onConfirm={() => setIsErrorModalOpen(false)}
-                confirmButtonClass="bg-teal-500 hover:bg-teal-600"
+                confirmButtonClass="bg-red-500 hover:bg-red-600"
             >
                 <p>{errorMessage}</p>
             </Modal>
