@@ -93,7 +93,7 @@
         "dashboard": "Dashboard",
         "hero_text_part1": "Teilen Sie Geheimnisse sicher mit verschlüsselten Nachrichten, die sich automatisch",
         "hero_text_part2": " selbst zerstören",
-        "hero_text_part3": " nachdem sie gelesen wurden."
+        "hero_text_part3": ", nachdem sie gelesen wurden."
     },
     "dashboard_layout": {
         "secrets": "Geheimnisse",
