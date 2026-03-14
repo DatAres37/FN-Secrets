@@ -139,7 +139,7 @@
         "ip_restriction_title": "Restrizione per IP o CIDR",
         "ip_restriction_description": "L'input CIDR permetterà agli utenti di specificare gli intervalli di indirizzi IP che possono accedere al segreto.",
         "ip_address_cidr_label": "Indirizzo IP o intervallo CIDR",
-        "ip_address_cidr_placeholder": "192.168.1.0/24 o 203.0.113.5",
+        "ip_address_cidr_placeholder": "203.0.113.5 o 2001:0db8:85a3:e6::/64",
         "ip_address_cidr_hint": "Solo le richieste da questi indirizzi IP potranno accedere al segreto",
         "burn_after_time_title": "Distruggi dopo la scadenza",
         "burn_after_time_description": "Distruggi il segreto solo dopo la scadenza del tempo"

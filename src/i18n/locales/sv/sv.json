@@ -139,7 +139,7 @@
         "ip_restriction_title": "Begränsa efter IP eller CIDR",
         "ip_restriction_description": "CIDR-inmatning låter användare ange IP-adressintervall som kan komma åt hemligheten.",
         "ip_address_cidr_label": "IP-adress eller CIDR-intervall",
-        "ip_address_cidr_placeholder": "192.168.1.0/24 eller 203.0.113.5",
+        "ip_address_cidr_placeholder": "203.0.113.5 eller 2001:0db8:85a3:e6::/64",
         "ip_address_cidr_hint": "Endast förfrågningar från dessa IP-adresser kommer att kunna komma åt hemligheten",
         "burn_after_time_title": "Bränn efter att tiden går ut",
         "burn_after_time_description": "Bränn hemligheten endast efter att tiden går ut"

@@ -139,7 +139,7 @@
         "ip_restriction_title": "Beperken op IP of CIDR",
         "ip_restriction_description": "Met een CIDR kun je een bereik opgeven van IP-adressen die toegang hebben tot het geheim.",
         "ip_address_cidr_label": "IP-adres of CIDR-bereik",
-        "ip_address_cidr_placeholder": "192.168.1.0/24 of 203.0.113.5",
+        "ip_address_cidr_placeholder": "203.0.113.5 of 2001:0db8:85a3:e6::/64",
         "ip_address_cidr_hint": "Alleen verzoeken van deze IP-adressen hebben toegang tot het geheim",
         "burn_after_time_title": "Vernietigen na het verlopen van de tijd",
         "burn_after_time_description": "Vernietig het geheim pas nadat de tijd is verstreken"

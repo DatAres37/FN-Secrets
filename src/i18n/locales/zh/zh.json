@@ -139,7 +139,7 @@
         "ip_restriction_title": "IP 或 CIDR 限制",
         "ip_restriction_description": "CIDR 输入将允许用户指定可以访问秘密的 IP 地址范围。",
         "ip_address_cidr_label": "IP 地址或 CIDR 范围",
-        "ip_address_cidr_placeholder": "192.168.1.0/24 或 203.0.113.5",
+        "ip_address_cidr_placeholder": "203.0.113.5 或 2001:0db8:85a3:e6::/64",
         "ip_address_cidr_hint": "只有来自这些 IP 地址的请求才能访问秘密",
         "burn_after_time_title": "过期后销毁",
         "burn_after_time_description": "仅在时间到期后销毁秘密"

@@ -139,7 +139,7 @@
         "ip_restriction_title": "Begræns efter IP eller CIDR",
         "ip_restriction_description": "CIDR-input giver brugere mulighed for at angive IP-adresseområder, der kan få adgang til hemmeligheden.",
         "ip_address_cidr_label": "IP-adresse eller CIDR-område",
-        "ip_address_cidr_placeholder": "192.168.1.0/24 eller 203.0.113.5",
+        "ip_address_cidr_placeholder": "203.0.113.5 eller 2001:0db8:85a3:e6::/64",
         "ip_address_cidr_hint": "Kun anmodninger fra disse IP-adresser vil kunne få adgang til hemmeligheden",
         "burn_after_time_title": "Brænd efter tiden udløber",
         "burn_after_time_description": "Brænd kun hemmeligheden efter tiden udløber"
