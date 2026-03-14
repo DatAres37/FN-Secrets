@@ -144,7 +144,7 @@ export function DashboardLayout() {
                                     className="flex items-center gap-2 text-gray-900 dark:text-white hover:text-red-500 dark:hover:text-red-400 transition-colors"
                                 >
                                     <Logo className="w-5 h-5 fill-gray-900 dark:fill-white" />
-                                    <span className="text-lg font-bold">Hemmelig</span>
+                                    <span className="text-lg font-bold">FN Secrets</span>
                                 </Link>
                             </div>
 
@@ -224,7 +224,7 @@ export function DashboardLayout() {
                                 className="flex items-center space-x-2 text-gray-900 dark:text-white"
                             >
                                 <Logo className="w-5 h-5 sm:w-6 sm:h-6 fill-gray-900 dark:fill-white" />
-                                <span className="text-xl font-bold">Hemmelig</span>
+                                <span className="text-xl font-bold">FN Secrets</span>
                             </Link>
                         </div>
 

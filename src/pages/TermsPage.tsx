@@ -11,13 +11,29 @@ export function TermsPage() {
                         <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                             Agreement to Terms
                         </h2>
-                        <p>
+                        <p className="mb-4">
                             These Terms of Use constitute a legally binding agreement made between
-                            you, whether personally or on behalf of an entity ("you") and Hemmelig
-                            Org ("Company," "we," "us," or "our"), concerning your access to and use
-                            of the https://hemmelig.app website as well as any other media form,
-                            media channel, mobile website or mobile application related, linked, or
-                            otherwise connected thereto (collectively, the "Site").
+                            you, whether personally or on behalf of an entity ("you") and FN Secrets
+                            ("we," "us," or "our"), concerning your access to and use of the website
+                            as well as any other media form, media channel, mobile  website or mobile
+                            application related, linked, or otherwise connected thereto (collectively,
+                            the "Site").
+                        </p>
+                        <p className="mb-4">
+                            This website, like all my other projects, are run privately, non-profit
+                            and with a focus on stability and privacy. Above all, it is important to
+                            me that users have a free and independent alternative to conventional
+                            services where they feel comfortable and don't have to worry about tracking
+                            or data misuse.
+                        </p>
+                        <p>
+                            Federation Network offers this service free of charge. We do everything
+                            in our power to operate the website securely and prevent data loss.
+                            Nevertheless, we recommend that you do not store any sensitive or important
+                            data on the website long-term. In the event of data loss, there is no
+                            obligation to restore the data. Services may be closed or fall victim to
+                            attacks. We therefore recommend that you keep a copy of the data that is
+                            important to you.
                         </p>
                     </section>
 

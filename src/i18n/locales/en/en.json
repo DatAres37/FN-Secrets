@@ -80,7 +80,7 @@
         "max_size_exceeded": "Total file size exceeds the maximum of {{maxSize}} MB"
     },
     "footer": {
-        "tagline": "Hemmelig, [heˈm(ɛ)li], means 'secret' in Norwegian",
+        "tagline": "Developed in Norway",
         "privacy": "Privacy",
         "terms": "Terms",
         "api": "API",
@@ -139,7 +139,7 @@
         "ip_restriction_title": "Restrict by IP or CIDR",
         "ip_restriction_description": "The CIDR input will allow users to specify IP address ranges that can access the secret.",
         "ip_address_cidr_label": "IP Address or CIDR Range",
-        "ip_address_cidr_placeholder": "192.168.1.0/24 or 203.0.113.5",
+        "ip_address_cidr_placeholder": "203.0.113.5 or 2001:0db8:85a3:e6::/64",
         "ip_address_cidr_hint": "Only requests from these IP addresses will be able to access the secret",
         "burn_after_time_title": "Burn after time expires",
         "burn_after_time_description": "Burn the secret only after the time expires"

@@ -80,7 +80,7 @@
         "max_size_exceeded": "Total filstorlek överskrider maximum på {{maxSize}} MB"
     },
     "footer": {
-        "tagline": "Hemmelig, [heˈm(ɛ)li], betyder 'secret' på norska",
+        "tagline": "Utvecklad i Norge",
         "privacy": "Integritet",
         "terms": "Villkor",
         "api": "API",

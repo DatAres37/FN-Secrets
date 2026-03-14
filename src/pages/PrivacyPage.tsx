@@ -10,7 +10,7 @@ export function PrivacyPage() {
                             Is my data secure?
                         </h2>
                         <p className="mb-4">
-                            Yes, your data is secure. Hemmelig uses client-side encryption with{' '}
+                            Yes, your data is secure. FN Secrets uses client-side encryption with{' '}
                             <strong>AES-256-GCM</strong>, a modern authenticated encryption
                             algorithm, powered by the Web Crypto API. All encryption and decryption
                             happens entirely in your browser. Your plaintext secret never leaves
@@ -42,6 +42,13 @@ export function PrivacyPage() {
                             encrypted and unreadable without the decryption key that only you
                             possess.
                         </p>
+                        <p className="mt-4">
+                            We operate our fully encrypted servers in Germany or Austria with daily
+                            backups and 24/7 monitoring. All servers are located in ISO
+                            27001-certified data centers and use hardened configurations and access
+                            (e.g. hardware security keys).
+
+                        </p>
                     </section>
 
                     <section>
@@ -49,7 +56,7 @@ export function PrivacyPage() {
                             Do you track me?
                         </h2>
                         <p className="mb-4">
-                            We use privacy-focused analytics to understand how Hemmelig is being
+                            We use privacy-focused analytics to understand how the website is being
                             used. Our analytics system is designed with privacy in mind:
                         </p>
                         <ul className="list-disc list-inside space-y-2 ml-4">
@@ -107,8 +114,7 @@ export function PrivacyPage() {
                             </li>
                         </ul>
                         <p className="mt-4">
-                            We do not store your plaintext secrets, decryption keys, or your IP
-                            address.
+                            We do not store your plaintext secrets or decryption keys.
                         </p>
                     </section>
 
@@ -130,6 +136,28 @@ export function PrivacyPage() {
                             .
                         </p>
                     </section>
+
+                    <section>
+                        <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                            Webserver logs
+                        </h2>
+                        <p>
+                            For security and debugging purposes, our server logs and stores visitor
+                            IP addresses for a maximum of three days. After that time, all IP
+                            addresses are removed.
+                        </p>
+                        <p className="mt-4">
+                            <a
+                                href="https://www.4netguides.org/impressum/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-orange-500 hover:text-orange-600 underline"
+                            >
+                                Imprint
+                            </a>
+                        </p>
+                    </section>
+
                 </div>
             </div>
         </div>

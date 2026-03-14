@@ -80,7 +80,7 @@
         "max_size_exceeded": "Gesamtdateigröße überschreitet das Maximum von {{maxSize}} MB"
     },
     "footer": {
-        "tagline": "Hemmelig, [heˈm(ɛ)li], bedeutet 'Geheimnis' auf Norwegisch",
+        "tagline": "Entwickelt in Norwegen",
         "privacy": "Datenschutz",
         "terms": "AGB",
         "api": "API",
@@ -139,7 +139,7 @@
         "ip_restriction_title": "Nach IP oder CIDR einschränken",
         "ip_restriction_description": "Die CIDR-Eingabe ermöglicht es Benutzern, IP-Adressbereiche anzugeben, die auf das Geheimnis zugreifen können.",
         "ip_address_cidr_label": "IP-Adresse oder CIDR-Bereich",
-        "ip_address_cidr_placeholder": "192.168.1.0/24 oder 203.0.113.5",
+        "ip_address_cidr_placeholder": "203.0.113.5 oder 2001:0db8:85a3:e6::/64",
         "ip_address_cidr_hint": "Nur Anfragen von diesen IP-Adressen können auf das Geheimnis zugreifen",
         "burn_after_time_title": "Nach Zeitablauf vernichten",
         "burn_after_time_description": "Das Geheimnis erst nach Ablauf der Zeit vernichten"
