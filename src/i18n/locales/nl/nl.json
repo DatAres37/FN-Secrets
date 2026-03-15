@@ -534,10 +534,10 @@
         "unexpected_error": "Er is een onverwachte fout opgetreden. Probeer het opnieuw."
     },
     "login_page": {
-        "back_to_hemmelig": "Terug naar Hemmelig",
-        "welcome_back": "Welkom terug bij Hemmelig",
+        "back_to_hemmelig": "Terug naar FN Secrets",
+        "welcome_back": "Welkom terug bij FN Secrets",
         "welcome_back_title": "Welkom terug",
-        "welcome_back_description": "Meld je aan met je Hemmelig-account",
+        "welcome_back_description": "Meld je aan met je FN Secrets-account",
         "username_label": "Gebruikersnaam",
         "username_placeholder": "Voer je gebruikersnaam in",
         "password_label": "Wachtwoord",
@@ -552,11 +552,11 @@
         "unexpected_error": "Er is een onverwachte fout opgetreden. Probeer het opnieuw."
     },
     "register_page": {
-        "back_to_hemmelig": "Terug naar Hemmelig",
-        "join_hemmelig": "Word lid van Hemmelig om veilig geheimen te delen",
+        "back_to_hemmelig": "Terug naar FN Secrets",
+        "join_hemmelig": "Word lid van FN Secrets om veilig geheimen te delen",
         "email_password_disabled_message": "Registratie met e-mail en wachtwoord is uitgeschakeld. Gebruik een van de onderstaande login-opties.",
         "create_account_title": "Account aanmaken",
-        "create_account_description": "Word lid van Hemmelig om veilig geheimen te delen",
+        "create_account_description": "Word lid van FN Secrets om veilig geheimen te delen",
         "username_label": "Gebruikersnaam",
         "username_placeholder": "Kies een gebruikersnaam",
         "email_label": "E-mail",

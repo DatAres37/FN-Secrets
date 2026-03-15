@@ -533,10 +533,10 @@
         "unexpected_error": "Si è verificato un errore imprevisto. Riprova."
     },
     "login_page": {
-        "back_to_hemmelig": "Torna a Hemmelig",
-        "welcome_back": "Bentornato su Hemmelig",
+        "back_to_hemmelig": "Torna a FN Secrets",
+        "welcome_back": "Bentornato su FN Secrets",
         "welcome_back_title": "Bentornato",
-        "welcome_back_description": "Accedi al tuo account Hemmelig",
+        "welcome_back_description": "Accedi al tuo account FN Secrets",
         "username_label": "Nome utente",
         "username_placeholder": "Inserisci il tuo nome utente",
         "password_label": "Password",
@@ -551,11 +551,11 @@
         "unexpected_error": "Si è verificato un errore imprevisto. Riprova."
     },
     "register_page": {
-        "back_to_hemmelig": "Torna a Hemmelig",
-        "join_hemmelig": "Unisciti a Hemmelig per condividere segreti in sicurezza",
+        "back_to_hemmelig": "Torna a FN Secrets",
+        "join_hemmelig": "Unisciti a FN Secrets per condividere segreti in sicurezza",
         "email_password_disabled_message": "La registrazione con email e password è disabilitata. Utilizza una delle opzioni di login social qui sotto.",
         "create_account_title": "Crea account",
-        "create_account_description": "Unisciti a Hemmelig per condividere segreti in sicurezza",
+        "create_account_description": "Unisciti a FN Secrets per condividere segreti in sicurezza",
         "username_label": "Nome utente",
         "username_placeholder": "Scegli un nome utente",
         "email_label": "E-mail",

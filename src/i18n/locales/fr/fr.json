@@ -533,10 +533,10 @@
         "unexpected_error": "Une erreur inattendue s'est produite. Veuillez réessayer."
     },
     "login_page": {
-        "back_to_hemmelig": "Retour à Hemmelig",
-        "welcome_back": "Bon retour sur Hemmelig",
+        "back_to_hemmelig": "Retour à FN Secrets",
+        "welcome_back": "Bon retour sur FN Secrets",
         "welcome_back_title": "Bon retour",
-        "welcome_back_description": "Connectez-vous à votre compte Hemmelig",
+        "welcome_back_description": "Connectez-vous à votre compte FN Secrets",
         "username_label": "Nom d'utilisateur",
         "username_placeholder": "Entrez votre nom d'utilisateur",
         "password_label": "Mot de passe",
@@ -551,11 +551,11 @@
         "unexpected_error": "Une erreur inattendue s'est produite. Veuillez réessayer."
     },
     "register_page": {
-        "back_to_hemmelig": "Retour à Hemmelig",
-        "join_hemmelig": "Rejoignez Hemmelig pour partager des secrets en toute sécurité",
+        "back_to_hemmelig": "Retour à FN Secrets",
+        "join_hemmelig": "Rejoignez FN Secrets pour partager des secrets en toute sécurité",
         "email_password_disabled_message": "L'inscription par e-mail et mot de passe est désactivée. Veuillez utiliser l'une des options de connexion sociale ci-dessous.",
         "create_account_title": "Créer un compte",
-        "create_account_description": "Rejoignez Hemmelig pour partager des secrets en toute sécurité",
+        "create_account_description": "Rejoignez FN Secrets pour partager des secrets en toute sécurité",
         "username_label": "Nom d'utilisateur",
         "username_placeholder": "Choisissez un nom d'utilisateur",
         "email_label": "E-mail",
@@ -735,7 +735,7 @@
         "sign_up_with": "S'inscrire avec {{provider}}"
     },
     "setup_page": {
-        "title": "Bienvenue sur Hemmelig",
+        "title": "Bienvenue sur FN Secrets",
         "description": "Créez votre compte administrateur pour commencer",
         "name_label": "Nom complet",
         "name_placeholder": "Entrez votre nom complet",

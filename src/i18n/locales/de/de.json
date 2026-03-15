@@ -533,10 +533,10 @@
         "unexpected_error": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
     },
     "login_page": {
-        "back_to_hemmelig": "Zurück zu Hemmelig",
-        "welcome_back": "Willkommen zurück bei Hemmelig",
+        "back_to_hemmelig": "Zurück zu FN Secrets",
+        "welcome_back": "Willkommen zurück bei FN Secrets",
         "welcome_back_title": "Willkommen zurück",
-        "welcome_back_description": "Melden Sie sich bei Ihrem Hemmelig-Konto an",
+        "welcome_back_description": "Melden Sie sich bei Ihrem Konto an",
         "username_label": "Benutzername",
         "username_placeholder": "Geben Sie Ihren Benutzernamen ein",
         "password_label": "Passwort",
@@ -551,11 +551,11 @@
         "unexpected_error": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
     },
     "register_page": {
-        "back_to_hemmelig": "Zurück zu Hemmelig",
-        "join_hemmelig": "Treten Sie Hemmelig bei, um Geheimnisse sicher zu teilen",
+        "back_to_hemmelig": "Zurück zu FN Secrets",
+        "join_hemmelig": "Treten Sie FN Secrets bei, um Geheimnisse sicher zu teilen",
         "email_password_disabled_message": "Die Registrierung mit E-Mail und Passwort ist deaktiviert. Bitte verwenden Sie eine der unten stehenden Social-Login-Optionen.",
         "create_account_title": "Konto erstellen",
-        "create_account_description": "Treten Sie Hemmelig bei, um Geheimnisse sicher zu teilen",
+        "create_account_description": "Treten Sie FN Secrets bei, um Geheimnisse sicher zu teilen",
         "username_label": "Benutzername",
         "username_placeholder": "Wählen Sie einen Benutzernamen",
         "email_label": "E-Mail",

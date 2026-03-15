@@ -533,10 +533,10 @@
         "unexpected_error": "发生意外错误。请重试。"
     },
     "login_page": {
-        "back_to_hemmelig": "返回 Hemmelig",
-        "welcome_back": "欢迎回到 Hemmelig",
+        "back_to_hemmelig": "返回 FN Secrets",
+        "welcome_back": "欢迎回到 FN Secrets",
         "welcome_back_title": "欢迎回来",
-        "welcome_back_description": "登录您的 Hemmelig 账户",
+        "welcome_back_description": "登录您的 FN Secrets 账户",
         "username_label": "用户名",
         "username_placeholder": "输入您的用户名",
         "password_label": "密码",
@@ -551,11 +551,11 @@
         "unexpected_error": "发生意外错误。请重试。"
     },
     "register_page": {
-        "back_to_hemmelig": "返回 Hemmelig",
-        "join_hemmelig": "加入 Hemmelig 安全分享秘密",
+        "back_to_hemmelig": "返回 FN Secrets",
+        "join_hemmelig": "加入 FN Secrets 安全分享秘密",
         "email_password_disabled_message": "邮箱和密码注册已禁用。请使用下方的社交登录选项。",
         "create_account_title": "创建账户",
-        "create_account_description": "加入 Hemmelig 安全分享秘密",
+        "create_account_description": "加入 FN Secrets 安全分享秘密",
         "username_label": "用户名",
         "username_placeholder": "选择用户名",
         "email_label": "电子邮件",

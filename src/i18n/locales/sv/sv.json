@@ -533,10 +533,10 @@
         "unexpected_error": "Ett oväntat fel inträffade. Försök igen."
     },
     "login_page": {
-        "back_to_hemmelig": "Tillbaka till Hemmelig",
-        "welcome_back": "Välkommen tillbaka till Hemmelig",
+        "back_to_hemmelig": "Tillbaka till FN Secrets",
+        "welcome_back": "Välkommen tillbaka till FN Secrets",
         "welcome_back_title": "Välkommen tillbaka",
-        "welcome_back_description": "Logga in på ditt Hemmelig-konto",
+        "welcome_back_description": "Logga in på ditt FN Secrets-konto",
         "username_label": "Användarnamn",
         "username_placeholder": "Ange ditt användarnamn",
         "password_label": "Lösenord",
@@ -551,11 +551,11 @@
         "unexpected_error": "Ett oväntat fel inträffade. Försök igen."
     },
     "register_page": {
-        "back_to_hemmelig": "Tillbaka till Hemmelig",
-        "join_hemmelig": "Gå med i Hemmelig för att dela hemligheter säkert",
+        "back_to_hemmelig": "Tillbaka till FN Secrets",
+        "join_hemmelig": "Gå med i FN Secrets för att dela hemligheter säkert",
         "email_password_disabled_message": "Registrering med e-post och lösenord är inaktiverad. Använd ett av de sociala inloggningsalternativen nedan.",
         "create_account_title": "Skapa konto",
-        "create_account_description": "Gå med i Hemmelig för att dela hemligheter säkert",
+        "create_account_description": "Gå med i FN Secrets för att dela hemligheter säkert",
         "username_label": "Användarnamn",
         "username_placeholder": "Välj ett användarnamn",
         "email_label": "E-post",
