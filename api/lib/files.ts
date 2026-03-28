@@ -1,7 +1,7 @@
 import { mkdir } from 'fs/promises';
 import { basename, join, resolve } from 'path';
 import { FILE } from './constants';
-import settingsCache from './settings';
+import { resolveSettings } from './settings';
 
 /** Upload directory path */
 export const UPLOAD_DIR = resolve(process.cwd(), 'uploads');
@@ -10,7 +10,7 @@ export const UPLOAD_DIR = resolve(process.cwd(), 'uploads');
  * Sanitizes a filename by removing path traversal sequences and directory separators.
  * Returns only the base filename to prevent directory escape attacks.
  */
-export function sanitizeFilename(filename: string): string {
+function sanitizeFilename(filename: string): string {
     // Get only the base filename, stripping any directory components
     const base = basename(filename);
     // Remove any remaining null bytes or other dangerous characters
@@ -30,8 +30,8 @@ export function isPathSafe(filePath: string): boolean {
  * Gets max file size from instance settings (in KB), converted to bytes.
  * Defaults to 10MB if not configured.
  */
-export function getMaxFileSize(): number {
-    const settings = settingsCache.get('instanceSettings');
+export async function getMaxFileSize(): Promise<number> {
+    const settings = await resolveSettings();
     const maxSecretSizeKB = settings?.maxSecretSize ?? FILE.DEFAULT_MAX_SIZE_KB;
     return maxSecretSizeKB * 1024; // Convert KB to bytes
 }
@@ -39,7 +39,7 @@ export function getMaxFileSize(): number {
 /**
  * Ensures the upload directory exists, creating it if necessary.
  */
-export async function ensureUploadDir(): Promise<void> {
+async function ensureUploadDir(): Promise<void> {
     try {
         await mkdir(UPLOAD_DIR, { recursive: true });
     } catch (error) {

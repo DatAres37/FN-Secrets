@@ -71,7 +71,31 @@ startJobs();
 // Add the middlewares
 // More middlewares can be found here:
 // https://hono.dev/docs/middleware/builtin/basic-auth
-app.use(secureHeaders());
+app.use(async (c, next) => {
+    // Skip CSP for Swagger UI docs page (it loads scripts/styles from cdn.jsdelivr.net)
+    if (c.req.path.endsWith('/api/docs')) {
+        return next();
+    }
+    return secureHeaders({
+        contentSecurityPolicy: {
+            defaultSrc: ["'self'"],
+            scriptSrc: ["'self'"],
+            styleSrc: ["'self'", "'unsafe-inline'"],
+            imgSrc: ["'self'", 'data:', 'blob:'],
+            fontSrc: ["'self'"],
+            connectSrc: ["'self'"],
+            objectSrc: ["'none'"],
+            frameAncestors: ["'none'"],
+            baseUri: ["'self'"],
+            formAction: ["'self'"],
+        },
+        permissionsPolicy: {
+            camera: [],
+            microphone: [],
+            geolocation: [],
+        },
+    })(c, next);
+});
 app.use(logger());
 app.use(trimTrailingSlash());
 app.use(`/*`, requestId());
@@ -129,9 +153,6 @@ app.on(['POST', 'GET'], `/auth/*`, (c) => {
 
 // Add the application routes
 app.route('/', routes);
-
-// https://hono.dev/docs/guides/rpc#rpc
-export type AppType = typeof routes;
 
 export default app;
 

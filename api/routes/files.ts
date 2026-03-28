@@ -8,6 +8,7 @@ import { pipeline } from 'stream/promises';
 import prisma from '../lib/db';
 import { generateSafeFilePath, getMaxFileSize, isPathSafe } from '../lib/files';
 import { resolveSettings } from '../lib/settings';
+import { authMiddleware } from '../middlewares/auth';
 import { idParamSchema } from '../validations/shared';
 
 const files = new Hono();
@@ -71,7 +72,7 @@ files.get('/:id', zValidator('param', idParamSchema), async (c) => {
     }
 });
 
-files.post('/', async (c) => {
+files.post('/', authMiddleware, async (c) => {
     try {
         // Check if file uploads are allowed
         const instanceSettings = await resolveSettings();
@@ -88,7 +89,7 @@ files.post('/', async (c) => {
             return c.json({ error: 'File is required and must be a file.' }, 400);
         }
 
-        const maxFileSize = getMaxFileSize();
+        const maxFileSize = await getMaxFileSize();
         if (file.size > maxFileSize) {
             return c.json(
                 { error: `File size exceeds the limit of ${maxFileSize / 1024 / 1024}MB.` },
